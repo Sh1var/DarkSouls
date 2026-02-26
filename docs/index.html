@@ -181,7 +181,7 @@
     <img id="modalImg">
 </div>
 <script>
-const shots = document.querySelectorAll('.shot');
+const shots = document.querySelectorAll('img.shot');
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImg');
 
@@ -191,10 +191,10 @@ shots.forEach(img => {
         modalImg.src = this.src;
     });
 });
+
 function closeImage() {
     modal.style.display = "none";
 }
-
 </script>
 
 <div class="container border my-3 ">
